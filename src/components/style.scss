@@ -1,29 +1,67 @@
 // Importing variables
-@import './variables.scss';
+@import "./variables.scss";
 
 // Importing Bulma from node_modules
-@import '~bulma/bulma.sass';
+@import "~bulma/bulma.sass";
 
 .gradientBg {
-	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+  display: flex;
+  background: linear-gradient(to top right, $primary-color, $secondary-color);
 }
 
 .center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
-	display: flex;
-	padding: 1.5rem 1.5rem;
-	line-height: 1.5rem;
-	a {
-		border-bottom: 1px solid;
-		color: black;
-	}
-	a:hover {
-		color: $secondary-color;
-	}
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  line-height: 1.5rem;
+  a {
+    border-bottom: 1px solid;
+    color: black;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+a {
+  // border-bottom: 1px solid;
+  color: $primary-color;
+}
+a:hover {
+  color: $secondary-color;
+}
+
+.header-media-content {
+  text-align: center;
+}
+
+.work-pls {
+  color: $primary-color;
+  font-size: 20px;
+}
+
+.work-pls:hover {
+  color: $secondary-color;
+}
+
+.fa-hand-holding-heart {
+  padding-right: 7.5px;
+}
+
+.hero-head {
+  background: white;
+  padding: 25px 0;
+}
+
+.about-me-content {
+  line-height: 2em;
+}
+
+.footer {
+  text-align: center;
 }

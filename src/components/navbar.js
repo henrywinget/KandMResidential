@@ -10,25 +10,32 @@ const Navbar = () => (
 		<nav className="navbar">
 			<div className="container">
 				<div className="navbar-brand">
-					<a
-						className="navbar-item"
-						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
+					<a className="navbar-item"
+						href="/" >
+						{/* <img src={gatsbyLogo} alt="Logo-1" />
+						<img src={bulmaLogo} alt="Logo-2" /> */}
+						<h1 className="work-pls">K & M Residential Solutions</h1>
 					</a>
 				</div>
 				<div id="navbarMenuHeroA" className="navbar-menu">
 					<div className="navbar-end">
 						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-							>
-								<span className="icon">
-									<FaGithub size="fa-2x" />
-								</span>
-								<span>Download</span>
+							<a href="#" >
+								<span>Home</span>
+							</a>
+						</span>
+					</div>
+					<div className="navbar">
+						<span className="navbar-item">
+							<a href="#" >
+								<span>About</span>
+							</a>
+						</span>
+					</div>
+					<div className="navbar">
+						<span className="navbar-item">
+							<a href="#" >
+								<span>Donate</span>
 							</a>
 						</span>
 					</div>
