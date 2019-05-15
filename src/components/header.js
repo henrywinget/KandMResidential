@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHandHoldingHeart } from "react-icons/fa";
 
 import "./style.scss";
 
@@ -13,39 +13,28 @@ const Header = ({ siteTitle }) => (
     <div className="hero-body">
       <div className="container center">
         <article className="media">
-          {/* <figure className="is-left">
-						<span className="icon is-large ">
-							<img src={gatsbyLogo} alt="gatsby-logo" />
-						</span>
-					</figure>
-					<figure className="is-left">
-						<span className="icon is-large">
-							<img src={bulmaLogo} alt="bulma-logo" />
-						</span>
-					</figure> */}
           <div className="media-content">
             <div className="content">
-              <h1 className="is-uppercase is-size-1 has-text-white">
-                K & M Residential Solutions
-              </h1>
-              <p className="subtitle has-text-white is-size-3">
+              <div className="columns">
+                <h3
+                  className="is-size-3 has-text-link"
+                  style={{ textAlign: "center" }}
+                >
+                  <a style={{ textAlign: "center" }}>
+                    Learn about the BJB Memorial Fund
+                  </a>
+                </h3>
+              </div>
+              <div className="columns donate-here">
                 <a
-                  class="button is-primary is-outlined"
+                  class="button is-link is-large is-rounded is-outlined donate-here-link"
                   href="https://secure.donationpay.org/charitysmith/give5.php?f=bjb-memorial-fund"
                 >
-                  <i class="fas fa-hand-holding-heart" />
-                  {"  "}Donate{" "}
+                  <span>
+                    <FaHandHoldingHeart /> Donate
+                  </span>
                 </a>
-                {/* <a
-									className="button is-info is-inverted"
-									href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-								>
-									<span className="icon">
-										<FaGithub size="fa-2x" />
-									</span>
-									<span>Download</span>
-								</a> */}
-              </p>
+              </div>
             </div>
           </div>
         </article>

@@ -6,7 +6,7 @@
 
 .gradientBg {
   display: flex;
-  background: linear-gradient(to top right, $primary-color, $secondary-color);
+  // background: linear-gradient(to top right, $primary-color, $secondary-color);
 }
 
 .center {
@@ -64,4 +64,37 @@ a:hover {
 
 .footer {
   text-align: center;
+}
+
+html {
+  // background: url("../images/colorful-hands.jpg") no-repeat center center fixed;
+  background: url("../images/hands-stained.jpg") no-repeat center center fixed;
+  // background: url("../images/helping-hands.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-me-content {
+  background: ghostwhite;
+}
+
+.donate-here {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-content {
+  // background: hcl(171, 100%, 41%);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.donate-here-link {
+  // border-radius: 25px;
+  margin-top: 10px;
+  padding: 0 25px;
 }
