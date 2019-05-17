@@ -40,15 +40,6 @@ a:hover {
   text-align: center;
 }
 
-.work-pls {
-  color: $primary-color;
-  font-size: 20px;
-}
-
-.work-pls:hover {
-  color: $secondary-color;
-}
-
 .fa-hand-holding-heart {
   padding-right: 7.5px;
 }
@@ -66,10 +57,34 @@ a:hover {
   text-align: center;
 }
 
+.bjb-content {
+  background: white;
+  text-align: center;
+}
+
+a {
+  color: $primary-color !important;
+  transition: 0.3s;
+}
+a:hover {
+  color: red !important;
+}
+
+.donate-here-link {
+  background: $primary-color;
+  color: white !important;
+}
+
+.donate-here-link:hover {
+  background: white;
+  color: red !important;
+}
+
 html {
   // background: url("../images/colorful-hands.jpg") no-repeat center center fixed;
-  background: url("../images/hands-stained.jpg") no-repeat center center fixed;
+  background: black url("../images/homes.jpg") no-repeat center center fixed;
   // background: url("../images/helping-hands.jpeg") no-repeat center center fixed;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

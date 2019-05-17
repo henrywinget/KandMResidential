@@ -5,53 +5,80 @@ import "./style.scss";
 import gatsbyLogo from "../images/gatsby-icon.png";
 import bulmaLogo from "../images/bulma-logo.png";
 
-const Navbar = () => (
-  <div className="hero-head is-hidden-mobile">
-    <nav className="navbar">
-      <div className="container">
-        <div className="navbar-brand">
-          <a className="navbar-item" href="/">
-            {/* <img src={gatsbyLogo} alt="Logo-1" />
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  toggle = e => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  render() {
+    return (
+      <div className="hero-head">
+        <nav className="navbar">
+          <div className="container">
+            <div className="navbar-brand">
+              <a className="navbar-item" href="/">
+                {/* <img src={gatsbyLogo} alt="Logo-1" />
 						<img src={bulmaLogo} alt="Logo-2" /> */}
-            <h1 className="work-pls">K & M Residential Solutions</h1>
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-          >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-          </a>
-        </div>
-        <div id="navbarMenuHeroA" className="navbar-menu">
-          <div className="navbar-end">
-            <span className="navbar-item">
-              <a href="#">
-                <span>Home</span>
+                <h1 className="work-pls">K & M Residential Solutions</h1>
               </a>
-            </span>
-          </div>
-          <div className="navbar">
-            <span className="navbar-item">
-              <a href="#">
-                <span>About</span>
+              <a
+                role="button"
+                className={
+                  this.state.isOpen
+                    ? "navbar-burger is-active"
+                    : "navbar-burger"
+                }
+                aria-label="menu"
+                aria-expanded="false"
+                name="isOpen"
+                onClick={this.toggle}
+                data-target="navbarMenuHeroA"
+              >
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
               </a>
-            </span>
+            </div>
+            <div
+              id="navbarMenuHeroA"
+              className={
+                this.state.isOpen ? "navbar-menu is-active" : "navbar-menu"
+              }
+            >
+              <div className="navbar-end">
+                <span className="navbar-item">
+                  <a href="#">
+                    <span>Home</span>
+                  </a>
+                </span>
+              </div>
+              <div className="navbar">
+                <span className="navbar-item">
+                  <a href="#">
+                    <span>About</span>
+                  </a>
+                </span>
+              </div>
+              <div className="navbar">
+                <span className="navbar-item">
+                  <a href="#">
+                    <span>Donate</span>
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
-          <div className="navbar">
-            <span className="navbar-item">
-              <a href="#">
-                <span>Donate</span>
-              </a>
-            </span>
-          </div>
-        </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-);
+    );
+  }
+}
 
 export default Navbar;
