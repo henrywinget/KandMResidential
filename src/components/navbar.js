@@ -2,7 +2,6 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 
 import "./style.scss";
-import gatsbyLogo from "../images/gatsby-icon.png";
 import bulmaLogo from "../images/bulma-logo.png";
 
 class Navbar extends React.Component {
@@ -24,8 +23,8 @@ class Navbar extends React.Component {
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="/">
-                {/* <img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" /> */}
+                {/*<img src={gatsbyLogo} alt="Logo-1" />*/}
+						    {/*<img src={bulmaLogo} alt="Logo-2" />*/}
                 <h1 className="work-pls">K & M Residential Solutions</h1>
               </a>
               <a
@@ -52,23 +51,30 @@ class Navbar extends React.Component {
                 this.state.isOpen ? "navbar-menu is-active" : "navbar-menu"
               }
             >
-              <div className="navbar-end">
-                <span className="navbar-item">
-                  <a href="#">
-                    <span>Home</span>
-                  </a>
-                </span>
-              </div>
               <div className="navbar">
                 <span className="navbar-item">
-                  <a href="#">
+                  <a href="/">
                     <span>About</span>
                   </a>
                 </span>
               </div>
+              <div className="navbar-end">
+                <span className="navbar-item">
+                  <a href="/homes">
+                    <span>K & M Homes</span>
+                  </a>
+                </span>
+              </div>
               <div className="navbar">
                 <span className="navbar-item">
-                  <a href="#">
+                  <a href="/frequently-asked-questions">
+                    <span>FAQ</span>
+                  </a>
+                </span>
+              </div>
+              <div className="navbar">
+                <span className="navbar-item">
+                  <a href="/donate">
                     <span>Donate</span>
                   </a>
                 </span>

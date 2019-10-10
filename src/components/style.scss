@@ -4,6 +4,37 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
 
+.title {
+  color: $primary-color !important;
+  padding-bottom: 10px !important;
+}
+
+.card-header-title {
+  color: $primary-color !important;
+}
+
+.card {
+  border-radius: 5px !important;
+}
+
+.all-faqs {
+  padding: 20px !important;
+
+}
+
+.faq-container {
+  background: whitesmoke !important;
+  padding: 5px 0 !important
+}
+
+.faq-card-container {
+  margin: 20px !important;
+}
+
+.point-maker {
+  font-weight: bold !important;
+}
+
 .gradientBg {
   display: flex;
   // background: linear-gradient(to top right, $primary-color, $secondary-color);
