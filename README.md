@@ -63,7 +63,7 @@ resolve: `gatsby-plugin-google-analytics`,
   }
 ```
 
-## Contact me
+## ContactForm me
 
 If you find any possible improvement or suggestion related to code or UI/UX please contribute by submitting a PR.
 

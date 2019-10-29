@@ -79,6 +79,13 @@ class Navbar extends React.Component {
                   </a>
                 </span>
               </div>
+              <div className="navbar">
+                <span className="navbar-item">
+                  <a href="/contact">
+                    <span>Contact</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </nav>
