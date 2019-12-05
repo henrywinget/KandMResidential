@@ -1,8 +1,6 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
 
 import "./style.scss";
-import bulmaLogo from "../images/bulma-logo.png";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -23,9 +21,7 @@ class Navbar extends React.Component {
           <div className="container">
             <div className="navbar-brand">
               <a className="navbar-item" href="/">
-                {/*<img src={gatsbyLogo} alt="Logo-1" />*/}
-						    {/*<img src={bulmaLogo} alt="Logo-2" />*/}
-                <h1 className="work-pls">K & M Residential Solutions</h1>
+                <h1 className="work-pls">K&M Residential Solutions</h1>
               </a>
               <a
                 role="button"
@@ -61,7 +57,7 @@ class Navbar extends React.Component {
               <div className="navbar-end">
                 <span className="navbar-item">
                   <a href="/homes">
-                    <span>K & M Homes</span>
+                    <span>K&M Homes</span>
                   </a>
                 </span>
               </div>

@@ -4,7 +4,7 @@ import Clear from "react-reveal/Fade";
 
 import "./style.scss";
 
-const Header = ({ siteTitle }) => (
+const DonateForm = ({ siteTitle }) => (
   <section className="hero gradientBg is-fullheight">
     <div className="hero-body">
       <div className="container center">
@@ -14,17 +14,17 @@ const Header = ({ siteTitle }) => (
               <div className="content" style={{ textAlign: "center" }}>
                 <div className="columns" style={{ textAlign: "center" }}>
                   <h1 style={{width: '100%'}} className="is-size-1 kandm-header">
-                    K&M Residential Solutions
+                    Donate to the BJB memorial fund
                   </h1>
                 </div>
                 <div className="columns center">
-                  <a
-                    className="is-size-4"
-                    style={{ textAlign: "center" }}
-                    href="https://charitysmith.org/memorial-funds/bjb-memorial-fund/  "
-                  >
-                    Providing permanent supported housing in a fully customized enriching Christian family home.
-                  </a>
+                  {/*<a*/}
+                    {/*className="is-size-4"*/}
+                    {/*style={{ textAlign: "center" }}*/}
+                    {/*href="https://charitysmith.org/memorial-funds/bjb-memorial-fund/  "*/}
+                  {/*>*/}
+                    {/*Providing permanent supported housing in a fully customized enriching Christian family home.*/}
+                  {/*</a>*/}
                 </div>
                 <div className="columns donate-here">
                   <a
@@ -45,4 +45,4 @@ const Header = ({ siteTitle }) => (
   </section>
 );
 
-export default Header;
+export default DonateForm;

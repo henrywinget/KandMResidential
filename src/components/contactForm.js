@@ -12,20 +12,20 @@ class ContactForm extends Component {
             <div className="field">
               <p className="control is-expanded has-icons-left">
                 <input className="input" type="text" placeholder="Name"/>
-        <span className="icon is-small is-left">
-          <i className="fas fa-user"></i>
-        </span>
-              </p>
-            </div>
-            <div className="field">
-              <p className="control is-expanded has-icons-left has-icons-right">
-                <input className="input is-success" type="email" placeholder="Email" value="alex@smith.com"/>
-        <span className="icon is-small is-left">
-          <i className="fas fa-envelope"></i>
-        </span>
-                  <span className="icon is-small is-right">
-          <i className="fas fa-check"></i>
-        </span>
+                <span className="icon is-small is-left">
+                  <i className="fas fa-user"></i>
+                </span>
+                      </p>
+                    </div>
+                    <div className="field">
+                      <p className="control is-expanded has-icons-left has-icons-right">
+                        <input className="input is-success" type="email" placeholder="Email" value="alex@smith.com"/>
+                <span className="icon is-small is-left">
+                  <i className="fas fa-envelope"></i>
+                </span>
+                          <span className="icon is-small is-right">
+                  <i className="fas fa-check"></i>
+                </span>
               </p>
             </div>
           </div>
