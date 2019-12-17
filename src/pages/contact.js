@@ -5,6 +5,7 @@ import Helmet from "../components/helmet";
 import ContactForm from '../components/contactForm';
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import ContactHeader from "../components/contactHeader";
 // import Faq from '../components/faq';
 
 class Contact extends Component {
@@ -13,6 +14,7 @@ class Contact extends Component {
       <div>
         <Helmet />
         <Navbar />
+        <ContactHeader/>
         <ContactForm/>
         <Footer />
       </div>

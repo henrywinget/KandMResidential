@@ -1,7 +1,25 @@
 import React, { Component } from "react";
 
 class FaqCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: true
+    }
+  }
+
+  toggleCard = () => {
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen
+    }))
+  };
+
   render() {
+    const style = {};
+    if(this.state.isOpen) {
+      style.display = 'none';
+    }
+
     return (
       <div>
         <div className="card">
@@ -9,13 +27,16 @@ class FaqCard extends Component {
             <p className="card-header-title">
               {this.props.question}
             </p>
-            <a href="#" className="card-header-icon" aria-label="more options">
+            <a tabIndex={this.props.index}
+               onClick={this.toggleCard}
+               className="card-header-icon"
+               aria-label="more options">
               <span className="icon">
                 <i className="fas fa-angle-down" aria-hidden="true"></i>
               </span>
             </a>
           </header>
-          <div className="card-content">
+          <div className="card-content" style={style}>
             <div className="content">
               {this.props.children}
               {/*<a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>*/}

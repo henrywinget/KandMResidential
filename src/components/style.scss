@@ -30,7 +30,7 @@
 .contact-form {
   background: whitesmoke !important;
   padding: 25px;
-  margin-top: 50px;
+  //margin-top: 50px;
   margin-bottom: 50px;
   min-height: 70vh;
 }
@@ -187,4 +187,28 @@ html {
 .footer-motto {
   padding: 25px;
   color: lightgrey;
+}
+
+.Contact_header {
+  background: whitesmoke !important;
+  padding: 25px;
+  margin-top: 50px;
+  top: 10px;
+  z-index: 10;
+  border-bottom: 1px solid darkcyan;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  //margin-bottom: 50px;
+  //min-height: 70vh;
+}
+
+.Contact_us_preface {
+  font-weight: bold;
+}
+
+.Homes_header {
+  background: whitesmoke !important;
+  padding: 25px;
+  margin-top: 50px;
+  min-height: 70vh;
 }
